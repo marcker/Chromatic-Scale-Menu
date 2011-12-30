@@ -18,7 +18,9 @@ body {
         list-style-type:none;
         margin-left:-40px;
         background:#F00;
+        vertical-align:middle;
         width:150px;
+        height:15px;
         padding:5px;
         margin-bottom:1px;
         text-align:right;
