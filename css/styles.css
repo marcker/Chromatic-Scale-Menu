@@ -1,0 +1,39 @@
+/*
+Chromatic Scale Menu 1.0
+              by Marcker
+     marckfree@gmail.com
+
+                Dez-2011
+             MIT License
+         
+          css/styles.css
+*/
+
+body {
+    font-family:Arial,Verdana,sans-serif;
+}
+
+    #menu ul li {
+        border-radius:5px;
+        list-style-type:none;
+        margin-left:-40px;
+        background:#F00;
+        width:150px;
+        padding:5px;
+        margin-bottom:1px;
+        text-align:right;
+        border-right:5px solid #900;
+    }
+    #menu ul li:hover {
+        background:#A00;
+    }
+
+        #menu ul li a {
+            text-decoration:none;
+            color:#CCC;
+            font-weight:bold;
+        }
+        #menu ul li a:hover {
+            color:#FFF;
+            text-shadow:1px 1px 1px #000;
+        }        
