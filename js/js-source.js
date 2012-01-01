@@ -13,20 +13,9 @@ function create_menu(color, mode) {
     function random() { return Math.random()*9;}
     function floor(x) { return Math.floor(x);}
     function generate_color() {
-            var R_number1, R_number2,
-                G_number1, G_number2,
-                B_number1, B_number2;
-
-            R_number1 = floor(random());
-            R_number2 = floor(random());
-            G_number1 = floor(random());
-            G_number2 = floor(random());
-            B_number1 = floor(random());
-            B_number2 = floor(random());
-            
-            return'#' + R_number1 + R_number2 +
-                        G_number1 + G_number2 +
-                        B_number1 + B_number2;
+            return'#' + floor(random()) + floor(random()) + // R
+                        floor(random()) + floor(random()) + // G
+                        floor(random()) + floor(random());  // B
         }
 
     var i,
