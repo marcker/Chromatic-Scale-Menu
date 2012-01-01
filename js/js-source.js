@@ -10,23 +10,23 @@ Chromatic Scale Menu 1.0
 */
 
 function create_menu(color, mode) {
-    function random() { return Math.random()*9;}
+    function random() { return Math.random();}
     function floor(x) { return Math.floor(x);}
-    function generate_color() {
-            return'#' + floor(random()) + floor(random()) + // R
-                        floor(random()) + floor(random()) + // G
-                        floor(random()) + floor(random());  // B
+    function generate_hex_color(hex_values) {
+        return'#' + hex_values[floor(random()*hex_values.length)] + hex_values[floor(random()*hex_values.length)] +
+                    hex_values[floor(random()*hex_values.length)] + hex_values[floor(random()*hex_values.length)] +
+                    hex_values[floor(random()*hex_values.length)] + hex_values[floor(random()*hex_values.length)];
         }
 
     var i,
         j,
         li = document.getElementById('menu').getElementsByTagName('li');
     
-    if (mode == 'random') {        
+    if (mode === 'random') {
         for (i = 0; i <= li.length - 1; i++) {
-            li[i].style.background = generate_color();    
-        }     
-    }    
+            li[i].style.background = generate_hex_color([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F']);
+        }
+    }
     else {
         color = color.split();
         var hex_letters = ['A', 'B', 'C', 'D', 'E', 'F'].reverse();
