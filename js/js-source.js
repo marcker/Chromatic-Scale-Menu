@@ -9,7 +9,7 @@ Chromatic Scale Menu 1.0
          js/js-source.js
 */
 
-function create_menu(color, mode) {
+function createMenu(color, mode) {
     function random() { return Math.random();}
     function floor(x) { return Math.floor(x);}
     function generate_random_hex_color(hex_values) {
@@ -44,5 +44,5 @@ function create_menu(color, mode) {
 }
 
 DomReady.ready(function() {
-    create_menu('#190');
+    createMenu('#190');
 });
